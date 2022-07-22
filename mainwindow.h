@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QAction>
 
 namespace Ui {
 class MainWindow;
@@ -23,6 +24,10 @@ private slots:
     void on_date_calc_btn_clicked();
     void on_date_oper_clear_clicked();
     void on_date_input_dateChanged(const QDate &date);
+
+    void on_Date_subs_date_toggled(bool checked);
+
+    void on_date_subs_inp_dateChanged(const QDate &date);
 
 private:
     Ui::MainWindow *ui;
